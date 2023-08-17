@@ -2,7 +2,7 @@
   "name": "hugh-gill-engineering",
   "version": "1.0.0",
   "description": "A React Web Page To Show Dads Work",
-  "main": "./frontend/src/App.js",
+  "main": "./backend/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
