@@ -4,7 +4,10 @@
   "description": "A React Web Page To Show Dads Work",
   "main": "./backend/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon \\backend\\server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
@@ -23,5 +26,12 @@
   "bugs": {
     "url": "https://github.com/HughGill/Hugh-Gill-Engineering/issues"
   },
-  "homepage": "https://github.com/HughGill/Hugh-Gill-Engineering#readme"
+  "homepage": "https://github.com/HughGill/Hugh-Gill-Engineering#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.1",
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
